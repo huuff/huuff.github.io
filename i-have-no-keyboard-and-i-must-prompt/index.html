@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://blog.haff.xyz/rss.xml">
+        
+        <title>A blog | The Dark Side of LLMs Nobody&#x27;s Told You About</title>
+
+        <link rel="preload" href="https://blog.haff.xyz/css/style.css" as="style">
+        <link rel="stylesheet" href="https://raw.githack.com/Speyll/suCSS/main/reset-min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://raw.githack.com/Speyll/suCSS/main/suCSS-min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://blog.haff.xyz/css/style.css">
+        <link rel="stylesheet" href="https://blog.haff.xyz/css/custom.css">
+
+        <!-- Add favicon with appropriate sizes -->
+        <link rel="icon" href="https:&#x2F;&#x2F;blog.haff.xyz/favicon.ico">
+        
+<script src="https://blog.haff.xyz/js/fix-footnotes.js"></script>
+<link rel="stylesheet" href="https://blog.haff.xyz/css/custom.css">
+
+    </head>
+    <body>
+        
+        
+        
+        
+        <nav id="nav-bar">
+            
+
+            <div class="theme-toggle" id="theme-toggle" role="button" tabindex="0" aria-label="Toggle theme"
+                data-icon-base="https://blog.haff.xyz/icons.svg"
+                data-icon-dark="#darkMode"
+                data-icon-light="#lightMode"
+                data-sound-src="https://blog.haff.xyz/click.ogg">
+                <svg class="icon">
+                    <use id="theme-icon"></use>
+                </svg>
+            </div>
+        </nav>
+
+        <main>
+            
+<article class="post">
+    <header class="post-header">
+        
+        <time datetime="2025-12-27">Published on:
+            <span class="accent-data">2025-12-27</span>
+        </time>
+        
+
+        
+
+        <h1>The Dark Side of LLMs Nobody&#x27;s Told You About</h1>
+    </header>
+
+
+
+    <div class="post-content">
+        <p>LLMs are progressing so quickly, they've already reached critical mass. They've become so deeply interwoven into our daily lives we can barely function without asking them a question every two minutes. All the knowledge in the world is now just a prompt away... but is there a flip-side to it?</p>
+<p><img src="https://blog.haff.xyz/i-have-no-keyboard-and-i-must-prompt/./sisyphus.jpg" alt="sisyphus" /></p>
+<h2 id="my-usage-of-llms">My usage of LLMs</h2>
+<p>I mainly use LLMs in two ways:</p>
+<ul>
+<li>Agentic: mostly to automate tedious refactors and tasks. I mainly do this for my job<sup class="footnote-reference"><a href="#1">1</a></sup>, with <em>Claude Code</em>.</li>
+<li>Chat: mostly as a glorified search engine, and mostly when I'm exploring some space of solutions (brainstorming) or seeking assistance for a task I'm not very knowledgeable about. For this, I use <em>aichat</em>.</li>
+</ul>
+<p>I'll focus on chat mode today, and maybe agentic usage (or <em>vibe coding</em>) will be a topic for another day.</p>
+<h2 id="latest-generation-of-llms-healed-my-trust-issues">Latest generation of LLMs healed my trust issues</h2>
+<p>I consider myself a bit of an AI skeptic, even though I value them as one of the biggest advancements I've witnessed. This stems from the fact that my confidence in them plummets when I spot confidently-stated misinformation<sup class="footnote-reference"><a href="#2">2</a></sup>. This is generally easy to do in fields I am knowledgeable about, but I'm not generally asking LLMs about these.</p>
+<p>A few months ago, it wasn't too hard to get very obvious misinformation from an LLM: syntax errors, code that wouldn't compile, hallucinated APIs, etc. A litmus test of mine was to ask them for references on their claims, and they would most of the time produce titles of books that didn't exist, or links that didn't go anywhere.</p>
+<p>This last generation<sup class="footnote-reference"><a href="#3">3</a></sup>, however, has <strong>really</strong> stepped up the game in this regard. It's much harder now to get non-compiling code from them, and it's not as hard to get fabricated sources, but it's definitely less frequent now.</p>
+<h2 id="but-are-they-right-though">But are they <strong>right</strong>, though?</h2>
+<p>Herein lies the crux of my post: I've definitely noted a huge boost in accuracy — and thus, usefulness — in the output of LLMs. However, I think this boost has also brought along a <strong>huge boost in their ability to deceive me into believing they're correct</strong>.</p>
+<p>Let me explain: the code they produce <em>looks</em> fine, it compiles, it definitely seems to do <em>something</em>, adding it seems to change the error messages I get... yet my problems don't seem to get solved. This became clear to me once I realized I spent a week in frustration holding several conversations with them in parallel, all day long.</p>
+<p>The problem with their output is that, even when wrong, it's so plausible that it's really hard to prove it's wrong. This lures you into the deepest of rabbit holes, always thinking you're just missing the last piece to solve the puzzle: adding context, specifying demands, applying their suggestions... but you may be unknowingly running in circles.</p>
+<p>This is a novel issue for me. Back in my time, with search engines, it was plainly obvious when there was no further information to be found and you were on your own<sup class="footnote-reference"><a href="#4">4</a></sup>. LLMs, however, always have one more solution to offer you, even when the last 50 prompts took you nowhere. This feels like it has a huge impact on your productivity, since you could have saved a few days just by trying another route.</p>
+<h2 id="is-it-that-bad">Is it that bad?</h2>
+<p>Maybe I'm overreacting. I'm sure that people weren't at first so able to determine that results in the second page of Google were pure garbage. Separating the wheat from the chaff is a learned skill, and maybe the next generation of AI-natives will develop the ability to quickly see through LLMs' bullshit?</p>
+<p>I'm not too confident that's even possible. Currently, the field progresses so quickly that I'm sure they'll find newer, innovative ways to bullshit us once we catch up.</p>
+<aside class="blog-aside">
+  <h3 id="bonus-what-was-i-even-doing">Bonus: What was I even doing?</h3>
+<p>I wanted to keep the main post abstract enough to talk about the general sentiment here, but I also wanted to be specific on the suffering I've gone through.</p>
+<p>I just started renting a <strong>very</strong> old server to have some fun with. I've been setting it up with a combination of Terraform (in which I'm a neophyte) and Nix (in which I have some experience). Everything was going rather well, until I noticed that making a very small change in my disk layout (adding a btrfs subvolume) rendered my server unable to boot.</p>
+<p>I was very frustrated by this issue since it was under a very specific set of conditions: almost every possible configuration of subvolumes worked perfectly, but this one didn't. The feedback loop was absolutely terrible: the remote management interface was so old it was almost impossible to use with modern technology, and the server took several minutes to boot every time I wanted to check whether it was fixed.</p>
+<p><em>Gemini</em> gave me <strong>tons</strong> of solutions, each of which took me almost 10 minutes to fully try out, and none of which fully fixed the issue (or fixed it, but caused a new one). None of them seemed outlandish, nor obviously incorrect, so I kept trying. This might have been exacerbated by the fact that my knowledge of btrfs, software RAID, dedicated servers[^5], and ancient remote management interfaces is very limited, but that's precisely a use-case LLMs are supposed to shine for.
+</aside>
+<h2 id="in-the-end-it-actually-solved-it">In the end it actually solved it</h2>
+<p>Shortly after I wrote the first draft of this post, I went back to beg <em>Gemini</em> for help. I sent it my <em>NixOS</em> configuration and asked it <em>"please, tell me what's wrong with this"</em>.</p>
+<p><strong>It immediately one-shotted a long list of severe issues with my configuration</strong><sup class="footnote-reference"><a href="#6">5</a></sup>. I followed through with the fixes, and everything got solved forever.</p>
+<p>I was absolutely flabbergasted, relieved, yet angry. Why didn't it tell me the first 50 times I asked for help? Had it been torturing me all this time on purpose? The worst of all is, most of the configuration was written in consultation with it; hell, I'm even pretty sure it produced the main offending snippet!</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>That's because there's nothing tedious in my daily life, everything's so fun.</p>
+</div>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>Actually, this is just a quirk of mine and I also experience it with people. Probably the reason why I never state anything confidently.</p>
+</div>
+<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
+<p>For some definition of generation. I am specifically talking about Gemini 3 Pro and Claude 4.5 Opus here, which are the models I use the most.</p>
+</div>
+<div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
+<p>Usually this happens when you reach the second page of Google results.</p>
+</div>
+<div class="footnote-definition" id="5"><sup class="footnote-definition-label">6</sup>
+<p>I'm a Millennial, after all. I was born in the age of the cloud.</p>
+</div>
+<div class="footnote-definition" id="6"><sup class="footnote-definition-label">5</sup>
+<p>Which I won't reproduce here because that'd be too revealing of my incompetence.</p>
+</div>
+
+    </div>
+
+    
+</article>
+
+        </main>
+
+        <footer>
+            <hr>
+<div id="footer-container">
+    <p>Made using <a target="_blank" rel="noopener noreferrer" href="https://github.com/Speyll/anemone">anemone</a> Zola theme</p>
+</div>
+
+        </footer>
+
+        <!-- Move JS to end of body and add defer -->
+        <script src="https://blog.haff.xyz/js/script.js" defer></script>
+    </body>
+</html>
